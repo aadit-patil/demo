@@ -18,41 +18,44 @@ class HomePage  extends StatelessWidget {
          appBar: AppBar(
            title: Text("Awesome App"),
          ),
-         body: Center(
-           child: Container(
-             width: 100,
-           height: 100,
-           padding: const EdgeInsets.all(8),
-           color:Colors.red,
-          //  alignment: Alignment.center,
-          //  color: Colors.teal,
-           
-        //    child: Text("I  Box",
-        //    style: TextStyle(
-        //      color: Colors.red,
-        //     fontSize: 20,
-        //     ),
-        // ),
-        
-           
-        //    decoration: BoxDecoration(
-        //     //  shape: BoxShape.circle,
-        //      borderRadius: BorderRadius.circular(10),
-        //      boxShadow: [BoxShadow(
-        //        color:Colors.grey,
-        //        blurRadius:6,
-               
-        //       //  spreadRadius: 10,
-        //       offset: Offset(2.0,10.0),
-        //        )],
+         body: Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Align(
+            alignment: Alignment.centerLeft,
+             child:Container(
+             color: Colors.black,
+            //  width: MediaQuery.of(context).size.width,
+            //  height: MediaQuery.of(context).size.height,
+            width:200,
+            height:400,
+             child:Column( 
+             mainAxisAlignment: MainAxisAlignment.start,
+             crossAxisAlignment: CrossAxisAlignment.center,
+               children: <Widget>[
+              Container(
+                width:100,
+                height:100,
+                color:Colors.red,
+              ),
+              Container(
+                 width:100,
+                height:100,
+                color:Colors.green,
+              ),
+              Container(
+              width:100,
+              height:100,
+              color:Colors.yellow,
+              )
+               ],
 
-        //      color: Colors.teal,
-        //      gradient: LinearGradient(colors: [ Colors.yellow,Colors.green]),
-        //    ),
-        //  )
+             )
+
+       
+       ),
+      ),
          ),
-       )
-       )
+    )
     );
 
       
